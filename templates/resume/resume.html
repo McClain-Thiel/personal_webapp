@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>McClain Thiel</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="Personal Website">
+	<meta name="keywords" content="resume, civic, onepage, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="{{ url_for('static', filename='resume/img/logo.png') }}" rel="shortcut icon"/>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i,700" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="{{url_for('static', filename='resume/css/bootstrap.min.css') }}"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='resume/css/font-awesome.min.css') }}"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='resume/css/flaticon.css') }}"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='resume/css/owl.carousel.css') }}"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='resume/css/magnific-popup.css') }}"/>
+	<link rel="stylesheet" href="{{ url_for('static', filename='resume/css/style.css') }}"/>
+
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+  		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  		<a href="index.html">Home</a>
+		<a href="#work_exp">Work Experience</a>
+		<a href="#edu">Education</a>
+		<a href="#proj">Projects</a>
+		<a href="#certs"> Awards</a>
+		<a href="{{ url_for('class_projects') }}">Class Projects</a>
+	</div>
+
+
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+
+	<!-- Header section start -->
+	<header class="header-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-4">
+					<div id="main" style="background: #f2f7f8">
+						<span style="font-size:30px;cursor:pointer;background: #f2f7f8" onclick="openNav()">&#9776; Menu</span>
+					</div>
+				</div>
+				<div class="col-md-8 text-md-right header-buttons">
+					<a href="{{ url_for('static', filename='resume/resume.pdf') }}" class="site-btn">Resume</a>
+					<!-- <a href="img/resume.pdf" class="site-btn">Download CV</a> -->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+	<!-- Hero section start -->
+	<section class="hero-section spad">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="hero-text">
+								<h2>McClain Thiel</h2>
+								<p>I’m a student from San Diego studying data science at UC Berkeley</p>
+							</div>
+							<div class="hero-info">
+								<h2>Contact Info</h2>
+								<ul>
+									<li><span>E-mail</span>McClain.Thiel@berkeley.edu</li>
+									<li><span>Phone </span>949-280-3248</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<figure class="hero-image">
+								<img src="{{ url_for('static', filename='resume/img/me.JPG') }}" alt="5">
+							</figure>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+	<!-- Social links section start -->
+	<div class="social-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+					<div class="social-link-warp">
+						<div class="social-links">
+							<a href="https://github.com/McClain-Thiel"><i class="fa fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/mcclain-thiel-6a2249123/"><i class="fa fa-linkedin"></i></a>
+							<a href="https://www.instagram.com/mcclain.thiel/"><i class="fa fa-instagram"></i></a>
+							<a href="https://www.facebook.com/profile.php?id=100009296407861&ref=br_rs"><i class="fa fa-facebook"></i></a>
+						</div>
+						<h2 class="hidden-md hidden-sm">My Social Profiles</h2>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Social links section end -->
+
+	<!-- Resume section start -->
+	<section class="resume-section spad" id="work_exp">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Work Experience</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>Hulu</h2>
+							<h3>Summer 2020</h3>
+							<h4>Software Engineering Intern</h4>
+							<p>I am working on recommending a RASP security platform to Hulu leadership. I am evaluating products by building a
+							web application security lab which dynamically deploys vulnerable web applications (node.js, flask, java and wordpress)
+							using Google kubernetes engine and provides a controlled environment to attack and monitor these applications. I am currently  meeting
+							with vendors and evaluating their products in my security lab.</p>
+						</li>
+						<li>
+							<h2>Climate.Ai</h2>
+							<h3>January 2020 - May 2020</h3>
+							<h4>Machine Learning Consultant</h4>
+							<p>My team at <a href="https://ml.berkeley.edu/">ML@B</a> consulted with climate.ai to prototype a machine learning system which uses geospatial
+								satellite data to predict and analyze crop production in underdeveloped regions. Our prototype has since been pushed into production.
+							</p>
+						</li>
+						<li>
+							<h2>UC Berkeley Division of Data Science</h2>
+							<h3>August 2019 - December 2019</h3>
+							<h4>Principal Investigator</h4>
+							<p>I led a team of 5 undergraduates in a research project through the Data Science Discovery program at UC Berkeley. Our goal was to use DCGANs
+								(deep convolutional generative adversarial networks) to enhance and augment undersized data sets for medical applications. The end goal is to
+								improve accuracy of object detection systems by producing more data from a limited sample size. Our novel approach increased accuracy on the
+								test set by an average of 12.4%.
+							</p>
+						</li>
+						<li>
+							<h2>ZMicro</h2>
+							<h3>Summer 2019</h3>
+							<h4>Machine Learning Engineer</h4>
+							<p>I built a prototype object detection and localization system to be run in real time for medical applications using YOLOv3 and Mask-RCNN. The project
+								was to help medical professionals find polyps in colonoscopy footage while performing the operation. Achieved frame accuracy of >98% and can theoretically
+								run upto 36 frames per second when optimized.  </p>
+						</li>
+						<li>
+							<h2>UC Berkeley IST</h2>
+							<h3>October 2018 - May 2019</h3>
+							<h4>Network engineering Intern</h4>
+							<p>Assisted UC network engineers with maintenance upkeep and expansion of the campus wide network infrastructure. </p>
+						</li>
+						<li>
+							<h2>La Jolla Institute of Allergy and Immunology</h2>
+							<h3>Summer 2016</h3>
+							<h4>Intern</h4>
+							<p>Worked in Dr. Shresta's lab during the summer of 2016 studying flaviviruses such as Zika and dengue fever during the Zika outbreak in Brazil. Duties included data collection and management. </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
+
+	<!-- Resume section start -->
+	<section class="resume-section with-bg spad" id="edu">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Education</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>UC Berkeley</h2>
+							<h3>B.A. Data Science</h3>
+							<h4>December 2020</h4>
+							<p> Minor: BioEngineering, Certificate in Entrepreneurship & Technology via SCET</p>
+							<button type="button" class="collapsible">Course Work</button>
+								<div class="content">
+  								<p>Technical:
+										Deep Learning,
+										Computational Photography and Image Processing,
+										Structure and Interpretation of Computer Programs,
+										Data Structures and Algorithms,
+										Probability Theory,
+										JavaScript for Developers,
+										Artificial Intelligence,
+										Machine Learning in Practice,
+										Data 8,
+										Principals and Techniques of Data Science,
+										Discrete Math and Probability Theory,
+										Computational Biology,
+										Engineering Molecules 2,
+										Machine Learning,
+										Deep Learning, GANs, and Variational Autoencoders (Udemy),
+										Physics,
+										Chemistry,
+										Biology,
+										Calculus, 
+										Linear Algebra
+</p>
+								</div>
+						</li>
+						<li>
+							<h2>London School of Economics</h2>
+							<h3>Certificate in Machine Learning</h3>
+							<h4>Summer 2019</h4>
+							<p>Highest grade in program</p>
+						</li>
+						<li>
+							<h2>Miracosta College</h2>
+							<h3>A.A. Liberal arts with a focus on math and science</h3>
+							<h4>Spring 2018</h4>
+							<p>Completed with honors in Spring of 2018. </p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Resume section end -->
+	<section class="resume-section  spad" id="proj">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Projects</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h2>SOIS.US</h2>
+							<h3>Summer 2020</h3>
+							<p>
+								On July 6 2020, the Trump administration announced a policy that said that all international
+								students not enrolled in in-person classes for the coming semester must leave the country. I found
+								this policy obnoxious and so with the help of some friends I made a <a href="http://sois.us/"> website</a>.
+								This site allows international and domestic students to connect to ensure that everyone can get the classes
+								they need. The site was up and running within 60 hours of its inception and got over 5000 hits within 12 hours
+								of its launch.
+							</p>
+
+							<h2>Anonymize.app</h2>
+							<h3>Summer 2020</h3>
+							<p>
+								In response to nationwide protests in June 2020, I created <a href="https://www.anonymize.app/">Anonymize</a> as an anti-surveillance
+								resource for those who might face retribution for being seen at political events or rallies. I had heard multiple reports of people
+								being harassed or fired from their job because they were in the background of a picture that didn't align with their employers political
+								beliefs and that was later published on a media outlet. My app solves this problem by using facial recognition and images processing to
+								find faces and blur them automatically. This site is still under development.
+
+							</p>
+
+							<h2>Robust Computer Vision</h2>
+							<h3>May 2020</h3>
+							<p> A common problem in the world of computer vision is building systems that perform as well as humans in conditions that
+							are adversarial to the was machines see. My team and I developed a novel data augmentation and training procedure to improve
+							accuracy of computer vision systems on natural adversarial examples. <a href="https://mcclain-thiel.github.io/Adversary_resistant_CV/">Report</a> </p>
+
+							<h2>Monocular Distancing</h2>
+							<h3>May 2020</h3>
+							<p>A known problem in computer vision and image processing is trying to gague distance without any objects of known size in the frame. I used
+							a machine learning based approach to make highly accurate guesses about the distance between a persons eyes based on their demographics
+							and then used prospective geometry to estimate their distance. My approach was accurate within 4% up to 20 ft with my laptop's webcam.
+							<a href="https://github.com/McClain-Thiel/comp-photo/tree/master/final">github</a> </p>
+
+							<h2>Blind NLP in Arabic</h2>
+							<h3>Summer 2019</h3>
+							<p>Natual Language Processing is very well studied in  English, but I wanted to see if the same techniques would work in other languages with substantial in syntax and structure. I used traditional approches including Niave bayes, RNN, and clustering to classify and cluster 2000 tweets written in MSA (modern standard Arabic) and Jordanian Arabic. <a href="https://github.com/McClain-Thiel/sentiment-analysis-in-arabic">Github</a>  </p>
+
+							<h2>Beating Vegas</h2>
+							<h3>Spring 2019</h3>
+							<p>Group project for Data Science in Practice. We build a machine learning pipeline that would scrape data about NBA teams and Vegas betting odds and would apply a conglomoration of algorithms to the data in order to recommend a bet for any given day. The project achived a theoretically small but profitable margin.
+
+							<h2>Polyp Vision</h2>
+							<h3>Summer 2019</h3>
+							<p>
+								I build a real-time object detection and localization to help doctors spot life threatening polyps in
+								colonoscopy footage and other medical procedures. Approach was fine -tuning the YOLOv3 algorithm with hand
+								labeled samples of polyps. System achieved an accuracy of >98% while running at about 5 fps on my laptop.
+								<a href="https://github.com/McClain-Thiel/polyp_vis">Github</a>
+							</p>
+
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Resume section start -->
+	<section class="resume-section with-bg spad" id="certs">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Certificates and Awards</h2>
+					</div>
+					<ul class="resume-list">
+						<li>
+							<h3>Dean's List</h3>
+							<p>
+
+							</p>
+
+							<h3>Cloud Engineer with Google Cloud - In progress</h3>
+							<p>
+
+							</p>
+
+							<h3>GIAC Security Essentials</h3>
+							<p>
+							</p>
+
+							<h3>National Merit Scholar (Honorable mention)</h3>
+							<p>
+
+							</p>
+
+							<h3>National AP Scholar</h3>
+							<p>
+
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+
+	<!-- Footer section start -->
+	<footer class="footer-section">
+		<div class="container text-center">
+			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</div>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	<script src="{{ url_for('static', filename='resume/js/jquery-2.1.4.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='resume/js/bootstrap.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='resume/js/owl.carousel.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='resume/js/magnific-popup.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='resmue/js/circle-progress.min.js') }}"></script>
+	<script src="{{ url_for('static', filename='resume/js/main.js') }}"></script>
+</body>
+</html>
+

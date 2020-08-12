@@ -1,0 +1,19 @@
+Technical:
+Structure and Interpretation of Computer Programs
+Data Structures and Algorithms
+Probability Theory
+JavaScript for Developers
+Artifical Intelligence 
+Machine Learning in Practice
+Data 8
+Principals and Techniques of Data Science
+Discrete Math and Probability Theory
+Computational Biology
+Engineering Molecues 2
+Machine Learning
+Deep Learning, GANs, and Variational Autoencoders (Udemy)
+Physics
+Chemistry
+Biology
+Calculus 
+Linear Algebra
