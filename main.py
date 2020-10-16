@@ -1,5 +1,4 @@
 from flask import Flask, render_template, flash, request
-import requests
 
 app = Flask(__name__)
 app.secret_key = b'many random bytes'

@@ -21,6 +21,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='resume/css/magnific-popup.css') }}"/>
 	<link rel="stylesheet" href="{{ url_for('static', filename='resume/css/style.css') }}"/>
 
+
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
@@ -101,7 +102,24 @@ function closeNav() {
 		</div>
 	</section>
 	<!-- Hero section end -->
-
+	<div class="social-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-10 offset-xl-1">
+						<h2 class="hidden-md hidden-sm">About Me</h2>
+					<p>
+						This website serves as a more complete resume which includes all interesting work
+						experience, personal projects, blog posts, ect. I'm currently taking the semester off
+						from school and working full-time at Curemetrix as a data scientist. In addition to
+						that I've also founded a consulting company called Seidr where I'm working with two
+						additional clients. I'll be returning to school in the spring and and finishing my degree.
+						I'm currently looking for full-time jobs post graduation, preferably working in heathtech
+						and doing machine learning. Feel free to reach out to me witht the links below.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Social links section start -->
 	<div class="social-section">
 		<div class="container-fluid">
@@ -132,18 +150,47 @@ function closeNav() {
 					</div>
 					<ul class="resume-list">
 						<li>
+							<h2>Seidr</h2>
+							<h4>Founder</h4>
+							<h3>Current Clients</h3>
+							<p>
+								<a href="https://www.ailahealth.com/">Aila Health</a> is an early stage precision
+								healthcare start up focused on using machine learning to improve the treatment of
+								chronic conditions, primarily autoimmune disorders. I am currently working on
+								building several ML systems including building knowledge systems to support physicians.
+							</p>
+							<p>
+								<a href="https://arricor.com/#/">Arricor</a> is a PNW based machine learning consulting company.
+								I am building AI products using advanced NLP for products not yet made public.
+							</p>
+						</li>
+						<li>
+							<h2>CureMetrix</h2>
+							<h3>Fall 2020</h3>
+							<h4>Data Science Intern</h4>
+							<p>
+								My primary goal is to improve the accuracy of medical computer vision systems with advanced
+								data augmentation. I run experiments involving applying state of the art papers to Curemetrix
+								products and data. I also do mare tradition data science work including quantifying the
+								efficacy of our products and comparing it to the efficacy of radiologists. I consolidate this
+								information into reports for FDA approval.
+							</p>
+						</li>
+						<li>
 							<h2>Hulu</h2>
 							<h3>Summer 2020</h3>
 							<h4>Software Engineering Intern</h4>
-							<p>I am working on recommending a RASP security platform to Hulu leadership. I am evaluating products by building a
-							web application security lab which dynamically deploys vulnerable web applications (node.js, flask, java and wordpress)
-							using Google kubernetes engine and provides a controlled environment to attack and monitor these applications. I am currently  meeting
-							with vendors and evaluating their products in my security lab.</p>
+							<p>Developed a web application security lab in conjunction with the cyber security and cloud
+								engineering teams. Used lab to programmatically deploy vulnerable web applications to GKE
+								and then attack the applications while monitoring behavior. Later deployed RASP protections
+								over the web applications and measured how much protection each RASP provided. Recommended
+								RASP vendor to senior leadership.
+							</p>
 						</li>
 						<li>
 							<h2>Climate.Ai</h2>
-							<h3>January 2020 - May 2020</h3>
-							<h4>Machine Learning Consultant</h4>
+							<h3>January 2020 - Current</h3>
+							<h4>Lead Consultant</h4>
 							<p>My team at <a href="https://ml.berkeley.edu/">ML@B</a> consulted with climate.ai to prototype a machine learning system which uses geospatial
 								satellite data to predict and analyze crop production in underdeveloped regions. Our prototype has since been pushed into production.
 							</p>
@@ -198,32 +245,9 @@ function closeNav() {
 							<h2>UC Berkeley</h2>
 							<h3>B.A. Data Science</h3>
 							<h4>December 2020</h4>
-							<p> Minor: BioEngineering, Certificate in Entrepreneurship & Technology via SCET</p>
-							<button type="button" class="collapsible">Course Work</button>
-								<div class="content">
-  								<p>Technical:
-										Deep Learning,
-										Computational Photography and Image Processing,
-										Structure and Interpretation of Computer Programs,
-										Data Structures and Algorithms,
-										Probability Theory,
-										JavaScript for Developers,
-										Artificial Intelligence,
-										Machine Learning in Practice,
-										Data 8,
-										Principals and Techniques of Data Science,
-										Discrete Math and Probability Theory,
-										Computational Biology,
-										Engineering Molecules 2,
-										Machine Learning,
-										Deep Learning, GANs, and Variational Autoencoders (Udemy),
-										Physics,
-										Chemistry,
-										Biology,
-										Calculus, 
-										Linear Algebra
-</p>
-								</div>
+							<p> Minor: BioEngineering, Certificate in Entrepreneurship & Technology via SCET,
+							Design Certificate from Jacob's institute, member and officer at Machine Learning
+							@ Berkeley</p>
 						</li>
 						<li>
 							<h2>London School of Economics</h2>
@@ -285,7 +309,9 @@ function closeNav() {
 							<p>A known problem in computer vision and image processing is trying to gague distance without any objects of known size in the frame. I used
 							a machine learning based approach to make highly accurate guesses about the distance between a persons eyes based on their demographics
 							and then used prospective geometry to estimate their distance. My approach was accurate within 4% up to 20 ft with my laptop's webcam.
-							<a href="https://github.com/McClain-Thiel/comp-photo/tree/master/final">github</a> </p>
+							<a href="https://github.com/McClain-Thiel/comp-photo/tree/master/final">github</a>
+							<a href="https://www.youtube.com/watch?v=UcgyF5bqn1U">Demo</a>
+							</p>
 
 							<h2>Blind NLP in Arabic</h2>
 							<h3>Summer 2019</h3>
@@ -312,7 +338,7 @@ function closeNav() {
 	</section>
 
 	<!-- Resume section start -->
-	<section class="resume-section with-bg spad" id="certs">
+	<section class="resume-section spad" id="certs">
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xl-7 offset-xl-2">
@@ -350,6 +376,31 @@ function closeNav() {
 			</div>
 		</div>
 	</section>
+	<section class="resume-section with-bg spad" id="pubs">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-xl-7 offset-xl-2">
+					<div class="section-title">
+						<h2>Publications</h2>
+					</div>
+					<h2>By me:</h2>
+					<ul class="resume-list">
+						<li>
+							<h3><a href="https://ml.berkeley.edu/blog/posts/AR_intro/">An Intuitive Introduction to Deep Autoregressive Networks</a></h3>
+						</li>
+					</ul>
+					<h2>Featuring me:</h2>
+					<ul class="resume-list">
+						<li>
+							<h3><a href="https://onezero.medium.com/social-movements-are-pushing-google-sheets-to-the-breaking-point-28bb86b76043"> Social Movements Are Pushing Google Sheets to the Breaking Point</a></h3>
+
+							<h3><a href="https://www.internships.com/career-advice/basics/get-involved-crc">Student Interview: How you can get involved in your community</a></h3>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
 	
 
 	<!-- Footer section start -->
@@ -357,7 +408,6 @@ function closeNav() {
 		<div class="container text-center">
 			<div class="copyright"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 </div>
 		</div>
 	</footer>
@@ -365,12 +415,29 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
 	<!--====== Javascripts & Jquery ======-->
-	<script src="{{ url_for('static', filename='resume/js/jquery-2.1.4.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='resume/js/bootstrap.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='resume/js/owl.carousel.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='resume/js/magnific-popup.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='resmue/js/circle-progress.min.js') }}"></script>
-	<script src="{{ url_for('static', filename='resume/js/main.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='resume/js/jquery-2.1.4.min.js')}}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='resume/js/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='resume/js/owl.carousel.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='resume/js/jquery.magnific-popup.min.js') }}"></script>
+	<script type="text/javascript" src="{{ url_for('static', filename='resume/js/main.js') }}"></script>
+	<script>
+		var coll = document.getElementsByClassName("collapsible");
+		var i;
+
+		for (i = 0; i < coll.length; i++) {
+			coll[i].addEventListener("click", function() {
+				this.classList.toggle("active");
+				var content = this.nextElementSibling;
+				if (content.style.display === "block") {
+					content.style.display = "none";
+				} else {
+					content.style.display = "block";
+				}
+			});
+		}
+	</script>
+
+
 </body>
 </html>
 

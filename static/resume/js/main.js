@@ -180,11 +180,6 @@ if($().circleProgress){
 
 })(jQuery);
 
- AOS.init({
- 	duration: 800,
- 	easing: 'slide'
- });
-
 (function($) {
 
 	"use strict";
