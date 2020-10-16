@@ -1,0 +1,3 @@
+privatekey_ssl.pem
+*.pem
+*.crt
